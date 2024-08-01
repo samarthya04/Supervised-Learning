@@ -81,6 +81,7 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - K-Nearest Neighbors")
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/ba252a27-8161-49fb-bc08-38ad95d1a181)
 
 #### Support Vector Machine
 A powerful classifier that finds the hyperplane which maximizes the margin between different classes.
@@ -104,6 +105,7 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Support Vector Machine")
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/1642e59c-5160-4a9b-a5ae-8e84e29c03d6)
 
 #### Random Forest
 An ensemble method that builds multiple decision trees and merges their results for more accurate and stable predictions.
@@ -127,6 +129,7 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Random Forest")
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/192fab24-bdbe-4123-b21e-50083b2aa915)
 
 ## Regression
 
