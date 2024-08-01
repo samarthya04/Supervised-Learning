@@ -85,6 +85,9 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - K-Nearest Neighbors")
 plt.show()
 ```
+```python
+K-Nearest Neighbors Accuracy: 1.00
+```
 ![image](https://github.com/user-attachments/assets/ba252a27-8161-49fb-bc08-38ad95d1a181)
 
 #### Support Vector Machine
@@ -109,6 +112,9 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Support Vector Machine")
 plt.show()
 ```
+```python
+Support Vector Machine Accuracy: 1.00
+```
 ![image](https://github.com/user-attachments/assets/1642e59c-5160-4a9b-a5ae-8e84e29c03d6)
 
 #### Random Forest
@@ -132,6 +138,9 @@ disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_na
 disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Random Forest")
 plt.show()
+```
+```python
+Random Forest Accuracy: 1.00
 ```
 ![image](https://github.com/user-attachments/assets/192fab24-bdbe-4123-b21e-50083b2aa915)
 
@@ -195,6 +204,10 @@ plt.ylabel('Predicted Prices')
 plt.title('Linear Regression - Actual vs Predicted Prices')
 plt.show()
 ```
+```python
+Linear Regression Mean Squared Error: 150853216.57
+```
+![image](https://github.com/user-attachments/assets/9b399d0c-64f9-4e90-987c-bb41d7c30d09)
 
 #### Decision Tree Regressor
 A non-linear model that splits the data into regions and fits a constant value in each region.
@@ -218,6 +231,10 @@ plt.ylabel('Predicted Prices')
 plt.title('Decision Tree Regressor - Actual vs Predicted Prices')
 plt.show()
 ```
+```python
+Decision Tree Regressor Mean Squared Error: 2487025435.60
+```
+![image](https://github.com/user-attachments/assets/4c73cd6f-13ba-4497-8549-eaad92bc0b24)
 
 #### Random Forest Regressor
 An ensemble method that builds multiple decision trees and averages their predictions for better accuracy and stability.
@@ -241,6 +258,10 @@ plt.ylabel('Predicted Prices')
 plt.title('Random Forest Regressor - Actual vs Predicted Prices')
 plt.show()
 ```
+```python
+Random Forest Regressor Mean Squared Error: 965854088.54
+```
+![image](https://github.com/user-attachments/assets/dac9f667-d1fb-480a-b7f6-42216f2e5a34)
 
 #### Support Vector Regressor
 A model that finds a hyperplane in the feature space which approximates the target values within a certain margin of tolerance.
@@ -264,6 +285,10 @@ plt.ylabel('Predicted Prices')
 plt.title('Support Vector Regressor - Actual vs Predicted Prices')
 plt.show()
 ```
+```python
+Support Vector Regressor Mean Squared Error: 33576956058.78
+```
+![image](https://github.com/user-attachments/assets/035451be-85c2-4a8b-86b8-a23bf753ae43)
 
 ## Conclusion
 
