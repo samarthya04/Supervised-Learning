@@ -57,6 +57,7 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Logistic Regression")
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/83384829-9587-4943-a2ca-5f94b84ce322)
 
 #### K-Nearest Neighbors
 A non-parametric method that classifies instances based on the majority label of their nearest neighbors in the feature space.
