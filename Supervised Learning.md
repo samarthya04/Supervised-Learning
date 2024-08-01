@@ -57,6 +57,10 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Logistic Regression")
 plt.show()
 ```
+##### Output
+```python
+Logistic Regression Accuracy: 1.00
+```
 ![image](https://github.com/user-attachments/assets/83384829-9587-4943-a2ca-5f94b84ce322)
 
 #### K-Nearest Neighbors
