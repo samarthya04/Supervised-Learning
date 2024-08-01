@@ -35,9 +35,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 #### Logistic Regression
 A linear model for binary classification that estimates the probability that an instance belongs to a particular class.
+
 ```python
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
 
 # Train Logistic Regression model
 log_reg = LogisticRegression(max_iter=200)
@@ -47,10 +49,18 @@ log_reg.fit(X_train, y_train)
 y_pred = log_reg.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Logistic Regression Accuracy: {accuracy:.2f}')
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, y_pred)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names)
+disp.plot(cmap=plt.cm.Blues)
+plt.title("Confusion Matrix - Logistic Regression")
+plt.show()
 ```
 
 #### K-Nearest Neighbors
 A non-parametric method that classifies instances based on the majority label of their nearest neighbors in the feature space.
+
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -62,10 +72,18 @@ knn.fit(X_train, y_train)
 y_pred = knn.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'K-Nearest Neighbors Accuracy: {accuracy:.2f}')
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, y_pred)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names)
+disp.plot(cmap=plt.cm.Blues)
+plt.title("Confusion Matrix - K-Nearest Neighbors")
+plt.show()
 ```
 
 #### Support Vector Machine
 A powerful classifier that finds the hyperplane which maximizes the margin between different classes.
+
 ```python
 from sklearn.svm import SVC
 
@@ -77,10 +95,18 @@ svm.fit(X_train, y_train)
 y_pred = svm.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Support Vector Machine Accuracy: {accuracy:.2f}')
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, y_pred)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names)
+disp.plot(cmap=plt.cm.Blues)
+plt.title("Confusion Matrix - Support Vector Machine")
+plt.show()
 ```
 
 #### Random Forest
 An ensemble method that builds multiple decision trees and merges their results for more accurate and stable predictions.
+
 ```python
 from sklearn.ensemble import RandomForestClassifier
 
@@ -92,6 +118,13 @@ rf.fit(X_train, y_train)
 y_pred = rf.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Random Forest Accuracy: {accuracy:.2f}')
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, y_pred)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names)
+disp.plot(cmap=plt.cm.Blues)
+plt.title("Confusion Matrix - Random Forest")
+plt.show()
 ```
 
 ## Regression
@@ -132,9 +165,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 #### Linear Regression
 A simple model that assumes a linear relationship between the input features and the target variable.
+
 ```python
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
 
 # Train Linear Regression model
 lin_reg = LinearRegression()
@@ -144,10 +179,18 @@ lin_reg.fit(X_train, y_train)
 y_pred = lin_reg.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print(f'Linear Regression Mean Squared Error: {mse:.2f}')
+
+# Plot predictions
+plt.scatter(y_test, y_pred)
+plt.xlabel('Actual Prices')
+plt.ylabel('Predicted Prices')
+plt.title('Linear Regression - Actual vs Predicted Prices')
+plt.show()
 ```
 
 #### Decision Tree Regressor
 A non-linear model that splits the data into regions and fits a constant value in each region.
+
 ```python
 from sklearn.tree import DecisionTreeRegressor
 
@@ -159,10 +202,18 @@ tree_reg.fit(X_train, y_train)
 y_pred = tree_reg.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print(f'Decision Tree Regressor Mean Squared Error: {mse:.2f}')
+
+# Plot predictions
+plt.scatter(y_test, y_pred)
+plt.xlabel('Actual Prices')
+plt.ylabel('Predicted Prices')
+plt.title('Decision Tree Regressor - Actual vs Predicted Prices')
+plt.show()
 ```
 
 #### Random Forest Regressor
 An ensemble method that builds multiple decision trees and averages their predictions for better accuracy and stability.
+
 ```python
 from sklearn.ensemble import RandomForestRegressor
 
@@ -174,10 +225,18 @@ rf_reg.fit(X_train, y_train)
 y_pred = rf_reg.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print(f'Random Forest Regressor Mean Squared Error: {mse:.2f}')
+
+# Plot predictions
+plt.scatter(y_test, y_pred)
+plt.xlabel('Actual Prices')
+plt.ylabel('Predicted Prices')
+plt.title('Random Forest Regressor - Actual vs Predicted Prices')
+plt.show()
 ```
 
 #### Support Vector Regressor
 A model that finds a hyperplane in the feature space which approximates the target values within a certain margin of tolerance.
+
 ```python
 from sklearn.svm import SVR
 
@@ -189,6 +248,13 @@ svr.fit(X_train, y_train)
 y_pred = svr.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print(f'Support Vector Regressor Mean Squared Error: {mse:.2f}')
+
+# Plot predictions
+plt.scatter(y_test, y_pred)
+plt.xlabel('Actual Prices')
+plt.ylabel('Predicted Prices')
+plt.title('Support Vector Regressor - Actual vs Predicted Prices')
+plt.show()
 ```
 
 ## Conclusion
