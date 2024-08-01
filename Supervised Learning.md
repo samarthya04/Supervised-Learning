@@ -85,6 +85,7 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - K-Nearest Neighbors")
 plt.show()
 ```
+##### Output
 ```python
 K-Nearest Neighbors Accuracy: 1.00
 ```
@@ -112,6 +113,7 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Support Vector Machine")
 plt.show()
 ```
+##### Output
 ```python
 Support Vector Machine Accuracy: 1.00
 ```
@@ -139,6 +141,7 @@ disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix - Random Forest")
 plt.show()
 ```
+##### Output
 ```python
 Random Forest Accuracy: 1.00
 ```
@@ -204,6 +207,7 @@ plt.ylabel('Predicted Prices')
 plt.title('Linear Regression - Actual vs Predicted Prices')
 plt.show()
 ```
+##### Output
 ```python
 Linear Regression Mean Squared Error: 150853216.57
 ```
@@ -231,6 +235,7 @@ plt.ylabel('Predicted Prices')
 plt.title('Decision Tree Regressor - Actual vs Predicted Prices')
 plt.show()
 ```
+##### Output
 ```python
 Decision Tree Regressor Mean Squared Error: 2487025435.60
 ```
@@ -258,6 +263,7 @@ plt.ylabel('Predicted Prices')
 plt.title('Random Forest Regressor - Actual vs Predicted Prices')
 plt.show()
 ```
+##### Output
 ```python
 Random Forest Regressor Mean Squared Error: 965854088.54
 ```
@@ -285,6 +291,7 @@ plt.ylabel('Predicted Prices')
 plt.title('Support Vector Regressor - Actual vs Predicted Prices')
 plt.show()
 ```
+##### Output
 ```python
 Support Vector Regressor Mean Squared Error: 33576956058.78
 ```
